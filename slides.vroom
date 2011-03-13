@@ -1,0 +1,84 @@
+# This is a sample Vroom input file. It should help you get started.
+#
+# Edit this file with your content. Then run `vroom --vroom` to start
+# the show!
+#
+# See `perldoc Vroom` for complete details.
+#
+---- config
+# Basic config options.
+title: Vroom!
+indent: 5
+height: 18
+width: 69
+skip: 0
+
+---- TODO
+- Cog
+- CogBase
+
+Apps:
+- HelloWord
+- CableCogs
+- XLog
+- Kwiki::Kog
+- PowerCog
+- KwikPix
+- SSB
+
+Features:
+- Add
+- Tag
+- Edit
+- Sort
+- Flip
+
+---- center
+Cog - The Thoughtful Web Framework
+
+by Ingy döt Net
+
+OSDC.tw
+
+March 26, 2011
+
+----
+* Cog
+* CogBase
+
+* KwikPix
+* PowerCog
+* CogLife
+* Kwiki^3
+----
+== World's Fastest Web Apps
+----
+== Uber Inheritance
+
+* Pyrl
+* Templates
+* JavaScript
+* CSS
+
+----
+== Why Cog is Perl?
+
+- Acmeism rules
+- but
+- Perl has the best community
+
+- Plack
+- Starman
+----
+== Jemplate is the Secret Sauce
+----
+== PowerCog
+
+- I think I will give it in PowerCog
+- where every slide is a universal thought unit
+- hmmm
+- so if all my thoughts are cog nodes...
+- and a cog node can be cast to many types or views
+- then a slideshow is just a list of cog id-s cast to a type of powerCogSlide
+----
+== The End
