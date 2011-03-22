@@ -69,9 +69,11 @@ March 26, 2011
 * KwikPix
 * PowerCog
 * CogLife
-* Kwiki^3
+* Kwiki 3
+* Spork++
 ----
 == World's Fastest Web Apps
+
 ----
 == Uber Inheritance
 
@@ -101,4 +103,26 @@ March 26, 2011
 - and a cog node can be cast to many types or views
 - then a slideshow is just a list of cog id-s cast to a type of powerCogSlide
 ----
+== Proxy Magic
+
+- Cross site scrapig made easy with Cog.
+- Using restapis
+- With authentication (like RT)
+
+== Static Serving
+
+- gh-pages
+- `cog nginx start`
+
+== Data is Data
+
+- Format doesn't matter as long as you keep all the points and relations
+- Make as open and accessible as possible
+
+== Ingy Lives in *A* Future
+
+- Not sure exactly which one
+- TBD
+
+
 == The End
