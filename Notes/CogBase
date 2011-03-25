@@ -1,0 +1,14 @@
+- Everything is Node
+- Node has UUID
+- Node has Type
+- Type has Schema
+- Schema is Node!
+- 
+- Node is shallow mapping
+  - Keyword/Typed-Value
+- Node has Revisions (1-n)
+- Revisions are Immutable
+- Object Types
+  - Schema Nodes
+- Type Inheritance
+- Git based Store
