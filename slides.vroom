@@ -9,123 +9,448 @@
 # Basic config options.
 title: Vroom!
 indent: 5
-height: 18
-width: 69
+height: 25
+width: 71
 skip: 0
+script: '>>'
+
+#>>chromium-browser http://ingy.net
+#>>qiv -f -i image/powells.png
+#>>gnome-terminal --window-withprofile=vw --working-directory ~/src/app-
 
 ---- center
 Cog - A Thoughtful Application Framework
 
-by Ingy döt Net
+by Ingy döt Net (應吉大内)
 
 OSDC.tw
 
 March 27, 2011
 ----
+>>qiv -f -i image/summer*
+== What I Learned in Ingy's OSDC Talk
+
+* Ingy döt Net == 應吉大内
+* I know about the Cog app framework
+* I saw some neat new apps
+* I saw a dynamic web app that wasn't slow!
+* I learned a few programming tricks
+* I know how long a billion seconds is
+* I'm in love with Jemplate
+* I learned some new ways to think about things
 ----
-== Wikileaks!
+== How About Them Wikileaks?!
 
 * Public/Government Role Reversal
 * CableGate - Over 250,000 Served!
-* Tunisia, Egypt, Libya
+* Jasmin Revolution - Tunisia, Egypt, Libya
 * Power to the People
 * Internet + SocialMedia + Tor + Wikileaks + People
+
 * What's Next?
+
 +* China??
 
 ----
+== Data Pools
+
+* WikiLeaks Cables is Big Pool of Data
+* Very Interesting Data
+
+* I Like Data
+* Cog is a Framework for Very Interesting Data
+
+* All the Released Cables: http://www.guardian.co.uk
++>>chromium-browser --app=http://www.guardian.co.uk/world/series/us-embassy-cables-the-documents
+
+* The data is all in silly web pages.
+
++* Let's Change That!
+----
+== Spider Cog Demo
+
+* SpiderCog is a Client Side App
+* Scrapes Other Web Sites
+* Saves Raw Data back on Server
+* Git Repository on GitHub!!
+
+<starting terminal>
++>>gnome-terminal --window-with-profile=vw --working-directory ~/src/cablecog-cog/spider/
+<starting app>
++>>chromium-browser --app=http://localhost:1234/
++>>chromium-browser --app=https://github.com/cogbase/cablecog-cog/tree/master/cable
+----
+== What Did we Just See?
+
+* The Cog App Framework
+* The SpiderCog App
+* Client Side Web Scraping
+* Jemplate - Industrial Strength JS Templating
+* CogBase - A Git-based Data Object Store
+
++    Let's Talk About Each of Those
+
++    But First...
+----
 == Ingy döt Net
 
-A little be about me
++>>chromium-browser --app=http://ingy.net/
 
 ----
-== Are You a Billion Yet?
+== Tag Cloud
+
+---- i0
+== Ingy's Top 10 Tag Cloud
+
+1) Artist   | OSDC       YAML       Wiki       Chamonix       竹北 
+            | 
+2) Inventor |       Parsing       Taipei       Ubuntu       Pegex    
+            | 
+3) Traveler |    Coffee       Jemplate       Tor       Tokyo   
+            | 
+4) Hacker   |        Acmeism       Portland       Seattle       Perl 
+            | 
+5) Acmeist  |       GitHUb       Regexp       YAPC       包子      
+            | 
+6) American | Vim      Chicago       新竹       Python       TestML
+            | 
+7) Cyclist  |        Git       jQuery       Newbury       JavaScript 
+            | 
+8) Lover    |      OSCON       JSON       San Francisco       中文
+            | 
+9) Fighter  |        Taiwan       RT       Melbourne       Data      
+            | 
+10) Old Man |      C'Dent       TT2       CPAN        Socialtext
+
+----
+== Ingy is really old. Are You a Billion Yet?
+
++>>qiv -f -i image/clock*
 
 * 31.7 Times Around the Sun
 
++    perl -MDate::Parse -le 'print scalar localtime \
+        str2time("Sep 4, 1981 17:00:00 +0800") + 10**9'
 
-
-----
-== Overview
-
-- People have sets of data that are important to them:
-  - Photos
-  - Thoughts/Beliefs
-  - Writings
-  - Wikileaks Cables
-  - To-Do lists
-  - Source Code
-  - Chinese Characters
-
-- Cog is about:
-  - Viewing Data
-  - Organizing Data
-  - Collaborating
-  - Data Ownership
-  - Data Sharing
-  - Applying new tricks to all collections
-  - Using clients beyond the browser
-----
-* Cog
-* CogBase
-
-* KwikPix
-* PowerCog
-* CogLife
-* Kwiki 3
-* Spork++
-----
-== World's Fastest Web Apps
++   CL Kao => Mon May 13 18:46:40 2013
++   Ingy döt Net => Sun Dec  3 00:11:40 1995
 
 ----
-== Uber Inheritance
+== Tag Cloud Perl 1 Liner
 
-* Pyrl
-* Templates
-* JavaScript
-* CSS
+    perl -le 'print join "\n", split /(.{55,}?(?= ))/, \
+        join "       ",  map {chomp;$_} \
+        sort {(rand) <=> (rand)} <>' Notes/Ingy-Cloud
+
+    -- Domo Ishigaki-san!!
 
 ----
-== Why Cog is Perl?
+== Bucket List
 
-- Acmeism rules
-- but
-- Perl has the best community
+1) Never been to 台中
+2) Never published a Ruby Module
+3) Never written a book
+4) Never been to a Radiohead concert
+5) Never written SQL
+6) Never felt an earthquake
+7) Never given a talk in 普通話
+8) Never kissed another man
+9) Never been to a Python conference
+10) Never created an AI being
 
-- Plack
-- Starman
++* One of these things is NOT true.
++* All of the rest, I want to do, before:
+
+    perl -e 'die $ingy'
+
++* EXCEPT ONE!!!
+
 ----
-== Jemplate is the Secret Sauce
-----
-== PowerCog
+== CableCog Demo
 
-- I think I will give it in PowerCog
-- where every slide is a universal thought unit
-- hmmm
-- so if all my thoughts are cog nodes...
-- and a cog node can be cast to many types or views
-- then a slideshow is just a list of cog id-s cast to a type of powerCogSlide
++>>chromium-browser --app=http://localhost:5555/
+----
+== Introduction to Cog
+
+* Cog is an Application Framework
+  * Web Apps
+  * Command Line Apps
+  * Both
+
+* Started writing Cog in November
+  * Still very new
+  * Wanted 5 Apps For Today
+
+----
+== Introduction to Cog
+
+* Started thinking about Cog in 2003
+
+* YAML - Data
+* Kwiki - Wiki
+* Socialtext - JavaScript
+
+* Cog turns Data into Applications
+
+----
+== Data Pools Driving Cog
+
+* Thought/Brain Data
+  * To Do lists
+  * Blogging 
+  * Stories / Memories
+* Wikileaks Cables
+* 中文子
+* Photos
+* Git Repositories
+* Project Managment (SSB)
+
+----
+== Introduction to Cog
+
+* Cog is Written in JavaScript and Perl
+  * JS for Dynamics
+  * Perl for Packaging and Statics
+* Cog Apps are Fast!!
+  * Fast to Write (I Hope)
+  * Fast in Browser (ZOMG Fuck Yeah!!)
+* Plugins
+  * Reusable Parts
+
+----
+== What's in Cog?
+
+* Cog::App - Cog::WebApp - Cog::PhoneApp (some day)
+* Cog::WebApp::Runner - Plack
+* Cog::Store - Cog::Store::CogBase
+* Cog::View
+* Shared Assets - Templates / JS / CSS / Images
+* jQuery - jQuery plugins - Jemplate
+* Proxy Magic!
+* JS/CSS compilation
+
+----
+== Subclass Uber Alles
+
+* Create a New App from an Old One
+* Add Plugins
+* Override Behaviours
+* Perl, JavaScript, Templates, CSS, Images, Config
+
+----
+== Demo CableCog App
+
+* Show the code.
+
++>>gnome-terminal --window-with-profile=vw --working-directory ~/src/app-cablecog-pm
+
+----
+== Dynamic from Static
+
+* Cog Apps only serve Static Content
+* Use the fastest server you can find!
+* No Perl run for ReadOnly stuffs
+* gh-pages
+* So fast. Feels Static.
+* It's Totally Dynamic
+* Cog is as Fast as your Browser
+
+----
+== Jemplate - Industrial Strength JS Templating
+
+* With all due respect...
++  * jQuery.tmpl is a toy
+
++* If you don't use Jemplate...
++  * YOU ARE DOING IT WRONG!!!
+----
+== Jemplate - Industrial Strength JS Templating
+
+* Jemplate is a JS Template Compiler
+* All of Template Toolkit
+  * TT2 is a complete programming language
+* No templates in HTML
+  * Anywhere!
+* Templates are precompiled into JS
+  * They cross the wire once
+* Clean, Lightweight, Fast
+
++* If You Remember Anything from this Talk...
+
++       Use Jemplate!!
+----
+== Jemplate - Industrial Strength JS Templating
+
+* Jemplate Demo
+  * jemplate --compile
+  * js concat/fingerprinting
+
++* jQuery-Jemplate - Marketing is Everything
+
+----
+== CogBase - GitHub is Your Cloud Database
+
+* CogBase is a Data Object Methodology
+* CogBase is Highly Experimental
+  * That's OK. Ingy-ventor
+
+----
+== CogBase 101
+
+* Everything is Node
+* Node has UUID
+* Node has Type
+* Type has Schema
+* Schema is Node!
+* Node is shallow mapping
+  * Keyword/Typed-Value
+* Value can be Node
+  * Deep Mapping Accomplished
+* Node has Revisions (1-n)
+* Revisions are Immutable
+* Object Types
+  * Schema Nodes
+* Type Inheritance
+* Git based Store
+
 ----
 == Proxy Magic
 
-- Cross site scrapig made easy with Cog.
-- Using restapis
-- With authentication (like RT)
+* Cross site scraping made easy with Cog.
+* Using rest-apis
+* With authentication (like RT)
 
-== Static Serving
+----
+== Demo SSB
 
-- gh-pages
-- `cog nginx start`
+* Multi markup
 
-== Data is Data
+----
+== Cog Apps Coming Soon
 
-- Format doesn't matter as long as you keep all the points and relations
-- Make as open and accessible as possible
+* XLog
+  * XLog/Comments 
+* CogPix
+* PowerCog
+* HelloWord
+* Kwiki 6
 
-== Ingy Lives in *A* Future
+----
+== Perl is Dead!!
 
-- Not sure exactly which one
-- TBD
+* Acmeism Rules
+* Perl has best Community
+* Perl has most Modules
+* Perl has great Packaging
+* Perl has Plack
 
+----
+== Ingy's 10 Commandments
 
+----
+== Ingy's 10 Gifts XD
+
+----
+== 1) We are the Champions (my friends)
+
+* OSDC is a precious meeting of FOSS advocates
+* Open Source == The Good Fight
+* Focus on the Good you can Create
+* FIGHT for it!!
+
+----
+== 2) Don't Repeat Yourself
+
+* Keep your stuff DRY
+* Duplication is the Devil
+* Duplication is Everywhere
+* All my projects are efforts to DRY
+* There are endless project ideas
+
+----
+== 3) Everything is Data
+
+* and Data is Everything
+* Even Code is Data
+  * Mainframes
+  * GitHub
+* Love Your Data
+* Own Your Data
+* Share Your Data
+
+----
+== 4) Code is Failure
+
+* Every line of code your write is a Failure!
+* Code should not be written
+  * Meta programming++
+* but Code MUST be written
+* so Fail Early, Fail Often
+* Be a Great Failure!
+
+----
+== 5) Be Great
+
+* Dream as big as you can
+* Believe in yourself and your dreams
+* Reach for the sky
+* Take you loftiest goals and double them
+* Set up your life for success
+
+----
+== 6) IE 6 MUST DIE!!
+
++    Sorry. That was last year. :\
+
+----
+== 6) Love Your Neighbor
+
+* Great ideas help all mankind (not just iphone users)
+* The great question for our time is, how to make sure that
+  the continuing scientific revolution brings benefits to
+  everybody rather than widening the gap between rich and
+  poor. To lift up poor countries, and poor people in rich
+  countries, from poverty, to give them a chance of a decent
+  life, technology is not enough. Technology must be guided
+  and driven by ethics if it is to do more than provide new
+  toys for the rich.
+
+----
+== 7) Follow the Money
+
+* If you want to know why things happen at the big level...
+* Just Follow the Money
+  * Governments
+  * Corporations
+  * Earthquake?
+* Put Your Money Where Your Heart Is
+
+----
+== 8) Your Body is Your Temple
+
+* Love your Mind and your Body
+* Write Code and Exercise
+* Every Day!
+* Eat Healthy
+* Live Long and Hack and Prosper
+
+----
+== 9) Be Anonymous
+
+* Learn Secure Communication and Use It!
+* Tor++
+* Also Be Open
+* Protect Your Rights and Liberties
+  * Fight for Them
+
+----
+== 10) Pair Up
+
+* Pair Programming is Sublime!
+* Lower Your Erdos Number
+* Lower Your Ingy Number!
+
+---- center
 == The End
+
+Any Questions?

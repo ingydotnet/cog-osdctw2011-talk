@@ -1,0 +1,102 @@
+----
+== Overview
+
+- People have sets of data that are important to them:
+  - Photos
+  - Thoughts/Beliefs
+  - Writings
+  - Wikileaks Cables
+  - To-Do lists
+  - Source Code
+  - Chinese Characters
+
+- Cog is about:
+  - Viewing Data
+  - Organizing Data
+  - Collaborating
+  - Data Ownership
+  - Data Sharing
+  - Applying new tricks to all collections
+  - Using clients beyond the browser
+----
+* Cog
+* CogBase
+
+* KwikPix
+* PowerCog
+* CogLife
+* Kwiki 3
+* Spork++
+----
+== World's Fastest Web Apps
+
+----
+== Uber Inheritance
+
+* Pyrl
+* Templates
+* JavaScript
+* CSS
+
+----
+== Why Cog is Perl?
+
+- Acmeism rules
+- but
+- Perl has the best community
+
+- Plack
+- Starman
+----
+== Jemplate is the Secret Sauce
+
+
+----
+== Jemplate
+
+* If you use jQuery.tmpl for JS Templates
+* YOU ARE DOING IT WRONG!
+----
+* Other 
+----
+== CogBase
+
+- If Git is the new Database
+- GitHub is the new Data Cloud
+
+- 300MB for free per email address
+- Google Apps gives you 100 emails for free
+- That's 30GB for free! ;)
+----
+== PowerCog
+
+- I think I will give it in PowerCog
+- where every slide is a universal thought unit
+- hmmm
+- so if all my thoughts are cog nodes...
+- and a cog node can be cast to many types or views
+- then a slideshow is just a list of cog id-s cast to a type of powerCogSlide
+----
+== Proxy Magic
+
+- Cross site scraping made easy with Cog.
+- Using rest-apis
+- With authentication (like RT)
+
+== Static Serving
+
+- gh-pages
+- `cog nginx start`
+
+== Data is Data
+
+- Format doesn't matter as long as you keep all the points and relations
+- Make as open and accessible as possible
+
+== Ingy Lives in *A* Future
+
+- Not sure exactly which one
+- TBD
+
+
+
