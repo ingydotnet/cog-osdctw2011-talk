@@ -79,6 +79,8 @@ March 27, 2011
 <starting app>
 +>>chromium-browser --app=http://localhost:1234/
 +>>chromium-browser --app=https://github.com/cogbase/cablecog-cog/tree/master/cable
+
+    grep -ir Taiwan cable/
 ----
 == What Did we Just See?
 
@@ -87,6 +89,7 @@ March 27, 2011
 * Client Side Web Scraping
 * Jemplate - Industrial Strength JS Templating
 * CogBase - A Git-based Data Object Store
+* Proxy Magic - Ajax to Anything
 
 +    Let's Talk About Each of Those
 
@@ -110,11 +113,11 @@ March 27, 2011
             | 
 4) Hacker   |        Acmeism       Portland       Seattle       Perl 
             | 
-5) Acmeist  |       GitHUb       Regexp       YAPC       包子      
+5) Acmeist  |  Strategic Data     GitHUb       Regexp       YAPC
             | 
 6) American | Vim      Chicago       新竹       Python       TestML
             | 
-7) Cyclist  |        Git       jQuery       Newbury       JavaScript 
+7) Cyclist  |  包子    Git     jQuery       Newbury       JavaScript 
             | 
 8) Lover    |      OSCON       JSON       San Francisco       中文
             | 
@@ -145,7 +148,7 @@ March 27, 2011
     -- Domo Ishigaki-san!!
 
 ----
-== Bucket List
+== Ingy's Bucket List
 
 1) Never been to 台中
 2) Never published a Ruby Module
@@ -168,6 +171,7 @@ March 27, 2011
 ----
 == CableCog Demo
 
++>>gnome-terminal --window-with-profile=vw --working-directory ~/src/cablecog-cog/
 +>>chromium-browser --app=http://localhost:5555/
 ----
 == Introduction to Cog
@@ -225,14 +229,14 @@ March 27, 2011
 * Cog::Store - Cog::Store::CogBase
 * Cog::View
 * Shared Assets - Templates / JS / CSS / Images
-* jQuery - jQuery plugins - Jemplate
-* Proxy Magic!
-* JS/CSS compilation
+* JS ==> jQuery - jQuery plugins - Jemplate
+* Proxy Magic! -- Plack Middleware
+* JS/CSS compilation - ETag - Speed Optimizing
 
 ----
 == Subclass Uber Alles
 
-* Create a New App from an Old One
+* Create a New Cog App from an Old One
 * Add Plugins
 * Override Behaviours
 * Perl, JavaScript, Templates, CSS, Images, Config
@@ -249,6 +253,8 @@ March 27, 2011
 
 * Cog Apps only serve Static Content
 * Use the fastest server you can find!
+  * Plack offers Starman and others
+  * Nginx, Lighttd, etc.
 * No Perl run for ReadOnly stuffs
 * gh-pages
 * So fast. Feels Static.
@@ -259,17 +265,26 @@ March 27, 2011
 == Jemplate - Industrial Strength JS Templating
 
 * With all due respect...
-+  * jQuery.tmpl is a toy
++* jQuery.tmpl is a TOY
 
++* Underpowered template language
+* Makes templating a complete mess
+
++* That's OK though...
++* Most people don't understand templates
+
++* 5 years ago I wrote Jemplate
++* It's my best contribution to programming
 +* If you don't use Jemplate...
-+  * YOU ARE DOING IT WRONG!!!
+
++== YOU ARE DOING IT WRONG!!!
 ----
 == Jemplate - Industrial Strength JS Templating
 
 * Jemplate is a JS Template Compiler
 * All of Template Toolkit
   * TT2 is a complete programming language
-* No templates in HTML
+* No templates in your HTML
   * Anywhere!
 * Templates are precompiled into JS
   * They cross the wire once
@@ -285,12 +300,15 @@ March 27, 2011
   * jemplate --compile
   * js concat/fingerprinting
 
++>>gnome-terminal --window-with-profile=vw --working-directory ~/src/app-cablecog-pm
+
 +* jQuery-Jemplate - Marketing is Everything
 
 ----
 == CogBase - GitHub is Your Cloud Database
 
 * CogBase is a Data Object Methodology
+* CogBase is about storing Human Thought
 * CogBase is Highly Experimental
   * That's OK. Ingy-ventor
 
@@ -311,7 +329,10 @@ March 27, 2011
 * Object Types
   * Schema Nodes
 * Type Inheritance
+* Nodes can be cast
+* Schema Nodes can cast as Class Modules!
 * Git based Store
++>>gnome-terminal --window-with-profile=vw --working-directory ~/src/cablecog-cog/cable
 
 ----
 == Proxy Magic
@@ -323,7 +344,15 @@ March 27, 2011
 ----
 == Demo SSB
 
+* Most sophisticated Cog App to date
+* Project Managment + Wiki
+* Used at Strategic Data
+
+* RT Login
 * Multi markup
+
++>>gnome-terminal --window-with-profile=vw --working-directory ~/src/strategic-stories-cog/
++>>chromium-browser --app=http://localhost:5000/
 
 ----
 == Cog Apps Coming Soon
@@ -338,11 +367,12 @@ March 27, 2011
 ----
 == Perl is Dead!!
 
-* Acmeism Rules
-* Perl has best Community
-* Perl has most Modules
-* Perl has great Packaging
-* Perl has Plack
++* Acmeism Rules
++* Perl has best Community
++* Perl has most Modules
++* Perl has great Packaging
++* Perl has Plack
++* Perl has Taiwan!!
 
 ----
 == Ingy's 10 Commandments
