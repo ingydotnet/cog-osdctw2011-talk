@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>009</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "008" + ".html";
+        return false;
+    }
+    if (keynum == 13 || keynum == 32) {
+        window.location = "010" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+                        Ingy's Top 10 Tag Cloud
+
+1) Artist   | OSDC       YAML       Wiki       Chamonix       竹北 
+            | 
+2) Inventor |       Parsing       Taipei       Ubuntu       Pegex    
+            | 
+3) Traveler |    Coffee       Jemplate       Tor       Tokyo   
+            | 
+4) Hacker   |        Acmeism       Portland       Seattle       Perl 
+            | 
+5) Acmeist  |  Strategic Data     GitHUb       Regexp       YAPC
+            | 
+6) American | Vim      Chicago       新竹       Python       TestML
+            | 
+7) Cyclist  |  包子    Git     jQuery       Newbury       JavaScript 
+            | 
+8) Lover    |      OSCON       JSON       San Francisco       中文
+            | 
+9) Fighter  |        Taiwan       RT       Melbourne       Data      
+            | 
+10) Old Man |      C'Dent       TT2       CPAN        Socialtext
+
+
+
+</pre>
+</body>

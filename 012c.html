@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>012c</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "012b" + ".html";
+        return false;
+    }
+    if (keynum == 13 || keynum == 32) {
+        window.location = "012z" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+
+                          Ingy's Bucket List
+     
+     1) Never been to 台中
+     2) Never published a Ruby Module
+     3) Never written a book
+     4) Never been to a Radiohead concert
+     5) Never written SQL
+     6) Never felt an earthquake
+     7) Never given a talk in 普通話
+     8) Never kissed another man
+     9) Never been to a Python conference
+     10) Never created an AI being
+     
+     * One of these things is NOT true.
+     * All of the rest, I want to do, before:
+     
+         perl -e 'die $ingy'
+     
+
+
+
+
+
+</pre>
+</body>
